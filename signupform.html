@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Thanh dien */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 18px 0 18px 0;
+  display: inline-block;
+  border: solid;
+  border-color: gray;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Nut */
+button {
+  background-color: #0918f0;
+  color: white;
+  padding: 14px 15px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-style: outset;
+}
+
+button:hover {
+  opacity:5;
+}
+
+/* + design cho nut cancel */
+.cancelbtn {
+  padding: 14px 15px;
+  background-color: #fd1010;
+}
+
+/* Size + vi tri cho nut */
+.cancelbtn, .signupbtn {
+  float: right;
+  width: 50%;
+}
+
+/* Dieu chinh khung */
+.container {
+  padding: 25px;
+  border-style: outset;
+  background-color: #b7e493;
+  flex-direction: row;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* resize nut  */
+@media screen and (max-width: 200px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+.multichoice{
+    width:150px;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    margin: 18px 0 18px 0;
+    flex-direction: row;
+}
+
+</style>
+<body>
+
+<a href="index.html"><img src="logo.png" width="80" height="80">
+
+<form action="/action_page.php" style="border:1px solid rgb(255, 245, 245)">
+    <div class="container">
+    <h1 style="color:rgb(38, 0, 252)">Đăng Ký Tài Khoản OmniFood</h1>
+    <p style="font-size:20px">Nhập thông tin.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Điền Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Điền mật khẩu" name="psw" required>
+
+    <label for="psw-repeat"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Nhập lại mật khẩu" name="psw-repeat" required>
+
+    <label for="phone-number"><b>Phone Number</b></label>
+    <input type="text" placeholder="Điền số điện thoại" name="phone-number" required>
+
+    <label for="gioitinh"><b>Giới Tính</b></label>
+   
+    <select name="gioitinh" class="multichoice" style="margin-left: 15px;">
+        <option value="Nam">Nam</option>
+        <option value="Nu">Nữ</option>
+        <option value="Lưachonkhac">...</option>
+    </select>
+    <br><br>
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin:5px"><b> Nhớ tài khoản</b>
+    </label>
+
+    
+    <p>Để tạo được tài khoản này bạn đã chấp nhận <a href="#" style="color:dodgerblue">Chính Sách Bảo Mật</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
