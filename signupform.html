@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Omifood Sign Up</title>
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box}
@@ -15,13 +17,13 @@ input[type=text], input[type=password] {
   background: #f1f1f1;
 }
 
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
+/* checkbox */
+input[type=checkbox]{
+  transform: scale(1.3);
 }
 
 hr {
-  border: 1px solid #f1f1f1;
+  border: 1px solid #000000;
   margin-bottom: 25px;
 }
 
@@ -58,7 +60,10 @@ button:hover {
 .container {
   padding: 25px;
   border-style: outset;
-  background-color: #b7e493;
+  background-image:url(assets/abstract-watercolor-gradient-paint-grunge-texture-background-free-photo.jpg);
+  background-color: rgba(255, 255, 255, 0.158);
+  background-blend-mode: overlay;
+  background-size: 100% 100%;
   flex-direction: row;
 }
 
@@ -85,12 +90,33 @@ button:hover {
     flex-direction: row;
 }
 
+.hide {
+    display: none;
+}
+    
+.myDIV:hover + .hide {
+    display: block;
+    border-style: double;
+    border-width: 3px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    font-size: 15px;
+    float:right;
+    width: 280px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
 </style>
+</head>
+
 <body>
 
-<form action="/action_page.php" style="border:1px solid rgb(255, 245, 245)">
+<a href="index.html"><img src="assets/logo.png" width="80" height="80"></a>
+
+<form style="border:1px solid rgb(255, 245, 245)">
     <div class="container">
-    <h1 style="color:rgb(38, 0, 252)">Đăng Ký Tài Khoản OmniFood</h1>
+    <h1 style="color:rgb(38, 0, 252)">Đăng Ký Tài Khoản OmiFood</h1>
     <p style="font-size:20px">Nhập thông tin.</p>
     <hr>
 
@@ -105,6 +131,26 @@ button:hover {
 
     <label for="phone-number"><b>Phone Number</b></label>
     <input type="text" placeholder="Điền số điện thoại" name="phone-number" required>
+    <br><br>
+    
+    <form>
+    <label for="Checkboxname"><b>Payment Method</b></label>
+    <label class = "checkbox-inline" style="margin-left:4px;">
+      <input type = "checkbox" value = "">Visa
+   </label>
+   <label class = "checkbox-inline" style="margin-left:4px;">
+      <input type="checkbox" value="">PayPal
+   </label>
+   <label class = "checkbox-inline" style="margin-left:4px;">
+      <input type = "checkbox" value = "">BankCard
+   </label>
+    <span class="myDIV"><img src="assets/info.png" width="17px" height="17px" style="margin-left:5px;"></span>
+   <span class="hide">[You can choose multibox in time.]<br><br>
+    [Bạn có thể chọn nhiều ô.]  
+  </span>
+    </form>
+    <br><br>
+
 
     <label for="gioitinh"><b>Giới Tính</b></label>
    
@@ -120,14 +166,22 @@ button:hover {
     </label>
 
     
-    <p>Để tạo được tài khoản này bạn đã chấp nhận <a href="#" style="color:dodgerblue">Chính Sách Bảo Mật</a>.</p>
+    <p>Để tạo được tài khoản này bạn đã chấp nhận <a href="security.html" target="_blank" style="color:dodgerblue"><b>Chính Sách Bảo Mật</b></a>.</p>
 
     <div class="clearfix">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <button type="submit" class="signupbtn">Sign Up</button>
+      <button type="button" class="cancelbtn" onClick="Exit()" >Cancel</button>
+      <button type="submit" class="signupbtn" onClick="signup()">Sign Up</button>
     </div>
   </div>
 </form>
+<script>
+  function Exit() {
+     var x=confirm('Are You sure want to exit:');
+   }
+   function signup(){
+    var x=alert('Success');
+   }
+</script>
 
 </body>
 </html>
