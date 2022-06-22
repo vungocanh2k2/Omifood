@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
   <head>
@@ -194,3 +195,192 @@ button:hover {
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Omifood Sign Up</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Thanh dien */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 18px 0 18px 0;
+  display: inline-block;
+  border: solid;
+  border-color: gray;
+  background: #f1f1f1;
+}
+
+/* checkbox */
+input[type=checkbox]{
+  transform: scale(1.3);
+}
+
+hr {
+  border: 1px solid #000000;
+  margin-bottom: 25px;
+}
+
+/* Nut */
+button {
+  background-color: #0918f0;
+  color: white;
+  padding: 14px 15px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-style: outset;
+}
+
+button:hover {
+  opacity:5;
+}
+
+/* + design cho nut cancel */
+.cancelbtn {
+  padding: 14px 15px;
+  background-color: #fd1010;
+}
+
+/* Size + vi tri cho nut */
+.cancelbtn, .signupbtn {
+  float: right;
+  width: 50%;
+}
+
+/* Dieu chinh khung */
+.container {
+  padding: 25px;
+  border-style: outset;
+  background-image:url(assets/abstract-watercolor-gradient-paint-grunge-texture-background-free-photo.jpg);
+  background-color: rgba(255, 255, 255, 0.158);
+  background-blend-mode: overlay;
+  background-size: 100% 100%;
+  flex-direction: row;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* resize nut  */
+@media screen and (max-width: 200px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+.multichoice{
+    width:150px;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    margin: 18px 0 18px 0;
+    flex-direction: row;
+}
+
+.hide {
+    display: none;
+}
+    
+.myDIV:hover + .hide {
+    display: block;
+    border-style: double;
+    border-width: 3px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    font-size: 15px;
+    float:right;
+    width: 280px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+
+<a href="index.html"><img src="assets/logo.png" width="80" height="80"></a>
+
+<form style="border:1px solid rgb(255, 245, 245)">
+    <div class="container">
+    <h1 style="color:rgb(38, 0, 252)">Đăng Ký Tài Khoản OmiFood</h1>
+    <p style="font-size:20px">Nhập thông tin.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Điền Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Điền mật khẩu" name="psw" required>
+
+    <label for="psw-repeat"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Nhập lại mật khẩu" name="psw-repeat" required>
+
+    <label for="phone-number"><b>Phone Number</b></label>
+    <input type="text" placeholder="Điền số điện thoại" name="phone-number" required>
+    <br><br>
+    
+    <form>
+    <label for="Checkboxname"><b>Payment Method</b></label>
+    <label class = "checkbox-inline" style="margin-left:4px;">
+      <input type = "checkbox" value = "">Visa
+   </label>
+   <label class = "checkbox-inline" style="margin-left:4px;">
+      <input type="checkbox" value="">PayPal
+   </label>
+   <label class = "checkbox-inline" style="margin-left:4px;">
+      <input type = "checkbox" value = "">BankCard
+   </label>
+    <span class="myDIV"><img src="assets/info.png" width="17px" height="17px" style="margin-left:5px;"></span>
+   <span class="hide">[You can choose multibox in time.]<br><br>
+    [Bạn có thể chọn nhiều ô.]  
+  </span>
+    </form>
+    <br><br>
+
+
+    <label for="gioitinh"><b>Giới Tính</b></label>
+   
+    <select name="gioitinh" class="multichoice" style="margin-left: 15px;">
+        <option value="Nam">Nam</option>
+        <option value="Nu">Nữ</option>
+        <option value="Lưachonkhac">...</option>
+    </select>
+    <br><br>
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin:5px"><b> Nhớ tài khoản</b>
+    </label>
+
+    
+    <p>Để tạo được tài khoản này bạn đã chấp nhận <a href="security.html" target="_blank" style="color:dodgerblue"><b>Chính Sách Bảo Mật</b></a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn" onClick="Exit()" >Cancel</button>
+      <button type="submit" class="signupbtn" onClick="signup()">Sign Up</button>
+    </div>
+  </div>
+</form>
+<script>
+  function Exit() {
+     var x=confirm('Are You sure want to exit:');
+   }
+   function signup(){
+    var x=alert('Success');
+   }
+</script>
+
+</body>
+</html>
+>>>>>>> 09f980b4922409605b4c107d26092b226e2cba98

@@ -1,0 +1,98 @@
+:root {
+    font-size: 62.5%;
+    --color1: ##FFC0CB;
+    --color2: #604a;
+    --color3: #3e1;
+    --color_icon: #65bbf2;
+    --color_border: ##CCCCFF;
+  }
+
+  body{
+    background-image: url(./icon/avatar.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 70%;
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background-image:url(https://www.foody.vn/bai-viet/cong-pha-ban-do-an-vat-hoanh-trang-tai-buon-me-thuot-18546);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 20%;
+    position: relative;
+  }
+  .form_login {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 70%;
+    position: absolute;
+    left: 78%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 10%);
+    border: 2px solid #000;
+    border-radius: 22px;
+    /* background-image: url(./icon/favicon.png) ; */
+    background-position: bottom;
+    background-repeat: no-repeat; 
+    background-size: 50%; 
+  }
+  .form_login-header {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form_login-text {
+    font-size: 4rem;
+    color: #000;
+  
+    display: inline-block;
+    max-width: 180px;
+  }
+  .login_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex: 1;
+  }
+  .login_button-name,
+  .login_button-password {
+    width: 80%;
+    height: 35px;
+    border: 2px solid var(--color_border);
+    border-radius: 5px;
+    padding: 2px 15px;
+    margin-bottom: 1.5rem;
+    background-color: var(--color3);
+    font-size: 2rem;
+    color: aliceblue;
+  }
+  .login_butuon-text {
+    font-size: 2rem;
+    color: var(--color_border);
+    margin-bottom: 38px;
+  }
+  .login_button-login {
+    width: 284px;
+    height: 43px;
+    border-radius: 5px;
+    font-size: 2rem;
+    border: none;
+  }
+  .login_button-login {
+    background-color: #FF0000;
+    margin-bottom: 4rem;
+  }
+  hr {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .login_button-login:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }

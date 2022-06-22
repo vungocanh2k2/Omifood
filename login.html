@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -67,4 +68,75 @@
   }) */
 </script>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADIM</title>
+  <link rel="stylesheet" href="./vendors/css/login.css">
+  <link rel="shortcut icon" type="image/jpg" href="Resources/img/admin.png"/>
+</head>
+
+<body>
+  <div class="container">
+    <img src="./Resources/img/nha-hang-viet.jpg" style="margin-top: 10%;width: 60%;" alt="">
+    <div class="form_login">
+      <div class="form_login-header">
+        <span class="form_login-text">Đăng nhập</span>
+        <img src="./admin_css/icon/favicon.png" alt="">
+      </div>
+      <div class="login_button">
+        <form action="./login.html" style="text-align: center;">
+          <input type="text" placeholder="Nhập Tên" required class="login_button-name" />
+          <input type="password" placeholder="Mật Khẩu" required class="login_button-password" />
+          <a href="" class="login_butuon-text" style="display: block;">tôi quên mật khẩu của tôi ?</a>
+          <button class="login_button-login">Đăng nhập</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</body>
+<!-- <script src="./admin.html"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function(){
+    $(".login_button-login").on("click",function(event){
+      event.preventDefault()
+      var un = document.querySelector(".login_button-name")
+      var pw =document.querySelector(".login_button-password")
+      if(un.value =="vungocanh"&& pw.value =="1111111"){
+        location.href="admin.html"
+      }
+      else{
+        alert('tài khoản hoặc mật khẩu không chính xác!!!')
+      }
+    })
+  })
+ /* const tk = document.getElementsByClassName('.login_button-name');
+  const pw = document.getElementsByClassName('.login_button-password');
+  const btn = document.querySelector('.login_button-login');
+  const login = document.querySelector('.login_button');
+
+  btn.addEventListener('click', function () {
+    if (tk.value == 'vungocanh' && pw.value == '123456') {
+      window.location.href = "admin.html";
+    }
+    else {
+      alert('tài khoản hoặc mật khẩu không chính xác!!!')
+    }
+  })
+
+  login.addEventListener('keyup', function (e) {
+    if (e.keyCode === 13) {
+      btn.click();
+    }
+  }) */
+</script>
+
+>>>>>>> 09f980b4922409605b4c107d26092b226e2cba98
 </html>
