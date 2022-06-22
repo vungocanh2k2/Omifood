@@ -31,6 +31,7 @@ body{
 /*--------------------------------------*/
 
 .row{
+    font-family: Arial, Helvetica, sans-serif;
     max-width: 1140px;
     margin: 0 auto;
     
@@ -46,7 +47,8 @@ section {
 /* Header component                     */
 /*--------------------------------------*/
 
-h1, h2, h3 {    
+h1, h2, h3 {  
+    font-family: Arial, Helvetica, sans-serif;  
     font-weight: 300;
     text-transform: uppercase;
     
@@ -107,7 +109,7 @@ h2:after{
     width:30px;
     text-align: center;
     color:#e67e22;   
-    font-size: 120%;
+    font-size: 80%;
     margin-right: 10px;
     
     /*secrets to aligh text and icons */
@@ -121,7 +123,7 @@ h2:after{
 /* Icons                          */
 /*--------------------------------------*/
 .icon-big{
-    font-size: 350%;
+    font-size: 250%;
     display: block;
     color: #e67e22;
     margin-bottom: 10px;
@@ -145,6 +147,7 @@ input[type= submit] {
 .btn-full:link,
 .btn-full:visited,
 input[type =submit]{
+    font-family: Arial, Helvetica, sans-serif;
     border: 1px solid #e67e22;
     color:#e67e22;   
     margin-right: 15px;
@@ -152,6 +155,7 @@ input[type =submit]{
 
 .btn-ghost:link,
 .btn-ghost:visited{
+    font-family: Arial, Helvetica, sans-serif;
     border: 1px solid #e67e22;
     color: #e67e22;    
 }
@@ -201,14 +205,6 @@ a:active {
 /* Header                               */
 /*--------------------------------------*/
 
-header{
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/hero-min.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/hero-min.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    background-attachment: fixed;
-}
 .hero-text-box{
     position: absolute;
     width:1140px;
@@ -427,15 +423,6 @@ transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 /*--------------------------------------*/
 /* TESTIMONIALS                         */
 /*--------------------------------------*/
-
-.section-testimonials{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers-min.jpg);
-    background-size: cover;
-    color:#fff;
-    background-attachment: fixed;
-    
-}
-
 .blockquote{
     padding: 2%;
     font-style: italic;
@@ -502,19 +489,19 @@ cite img{
 }
 
 .plan-price{
-    font-size: 300%;
+    font-size: 200%;
     margin-bottom: 10px;
     font-weight: 100;
     color:#e67e22;    
 }
 
 .plan-price span{
-    font-size: 30%;
+    font-size: 50%;
     font-weight: 300;
 }
 
 .plan-price-meal {
-    font-size: 80%;
+    font-size: 100%;
 }
 
 .plan-box ul{
@@ -639,6 +626,16 @@ footer p{
     margin-top: 30px
 }
 
+.submit-btn {
+    background-color: #e67e22;
+    padding: 0 20px;
+}
+
+.submit-btn:hover {
+    opacity: 1.2;
+}
+
+
 /*--------------------------------------*/
 /* Animations                           */
 /*--------------------------------------*/
@@ -661,3 +658,4 @@ footer p{
 .js--wp-3.animated{
     opacity: 1;
 }
+
